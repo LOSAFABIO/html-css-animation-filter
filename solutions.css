@@ -121,21 +121,94 @@
 @keyframes giro {
     from {transform: rotate(0);}
      to {transform: rotate(360deg);}
-
 }
 
 /* es 11*/
 
-.ex-11-icon{
+.ex-11-icon:hover{
     animation:  rotate 3s linear infinite;
 }
 
 @keyframes rotate{
     0% {transform: rotate(0);}
-    100% {transform: rotate(270deg);}
-    0% (transform: rotate(0);
+    90% {transform: rotate(270deg);}
+    100% {transform: rotate(0);}
 }
 
 /* es 12*/
 
+.ex-12-top-white{
+    animation:  spostamento1 3s linear infinite;
+}
+.ex-12-bottom-white{
+    animation:  spostamento2 3s linear infinite;
+}
+
+@keyframes spostamento1 {
+    0% {left: 10%;}
+
+    50% {left: 60%;}
+
+    100% {left: 10%;}
+}
+
+@keyframes spostamento2 {
+    0% {right: 10%;}
+
+    50% {right: 60%;}
+
+    100% {right: 10%;}
+}
+
 /* es 13*/
+
+.ex-13-top-white{
+    animation:  move1 3s linear infinite;
+}
+
+@keyframes move1 {
+
+    0% {left: 10%;
+        top: -10px;}
+
+    30% {left: 80%;
+        top: -10px;}
+
+    45% {left: 80%;
+        top: 90%;}
+
+    75% {left: -10px;
+        top: 90%;}
+
+    90% {left: -10px;
+        top: -10px;}
+
+    100% {left: 10%;
+        top: -10px;}
+}
+
+.ex-13-bottom-white{
+    animation:  move2 3s linear infinite;
+}
+
+
+@keyframes move2 {
+
+    0% {right: 10%;
+        bottom: -10px;}
+
+    30% {right: 80%;
+        bottom: -10px;}
+
+    45% {right: 80%;
+        bottom: 90%;}
+
+    75% {right: -10px;
+        bottom: 90%;}
+
+    90% {right: -10px;
+        bottom: -10px;}
+
+    100% {right: 10%;
+        bottom: -10px;}
+}
